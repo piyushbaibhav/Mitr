@@ -15,7 +15,7 @@ const WebcamComponent = () => {
 
   const handleCloseWebcam = () => {
     setOpenWebcam(false);
-    setScreenshot(null); // Reset the screenshot when closing the webcam
+    setScreenshot(null); 
   };
 
   const captureScreenshot = () => {
@@ -28,8 +28,8 @@ const WebcamComponent = () => {
     image.src = imageSrc;
     
     image.onload = () => {
-      const maxWidth = 300; // Set the maximum width for the resized image
-      const maxHeight = 300; // Set the maximum height for the resized image
+      const maxWidth = 300; 
+      const maxHeight = 300; 
       
       let width = image.width;
       let height = image.height;
