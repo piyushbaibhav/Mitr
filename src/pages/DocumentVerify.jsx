@@ -37,16 +37,16 @@ export default function DocumentVerify() {
     </nav>
       <div className='ml-10'>
           <div className='leading-relaxed'>
-          <p>Aadhar Card</p>
+          <p className='ml-4'>Aadhar Card</p>
           <Gallery/>
-          <p>Pan Card</p>
+          <p className='ml-4'>Pan Card</p>
           <Gallery/>
-          <p>Address Proof</p>
+          <p className='ml-4'>Address Proof</p>
           <Gallery/>
           </div>
       </div>     
     <Link to="/photoupload">
-         <button type="button" class="text-white m-5 ml-10 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Proceed</button>
+         <button type="button" class="text-white m-5 ml-14 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Proceed</button>
     </Link>
     </>
   )
