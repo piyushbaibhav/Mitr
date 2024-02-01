@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [isActive, setIsActive] = useState(false);
@@ -57,7 +58,9 @@ const Login = () => {
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
+          <Link to="/dashboard">
           <button>Sign Up</button>
+          </Link>
         </form>
       </div>
       <div className={`form-container sign-in ${isActive ? '' : 'move'}`}>
@@ -103,7 +106,9 @@ const Login = () => {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <a href="">Forgot your email or password?</a>
+          <Link to="/dashboard">
           <button>Sign in</button>
+          </Link>
 
         </form>
       </div>
