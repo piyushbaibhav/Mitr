@@ -3,8 +3,21 @@ import Hamburger from '../components/Hamburger'
 
 export default function Portal() {
   return (
-    <>  
-    <Hamburger/>
+    <>
+    <div>
+      <Hamburger/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>  
+    
     </>
   )
 }
