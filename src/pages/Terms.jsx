@@ -41,9 +41,9 @@ export default function Terms() {
     </nav>
     <div className='ml-5 mr-20 text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores perspiciatis nemo error ipsum tenetur unde eum voluptatem quam iusto eligendi odit sequi, ratione commodi! Rerum, modi aperiam! Earum, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui minus laboriosam labore facilis laudantium ducimus esse odio excepturi cupiditate, repellat quae quas porro sapiente necessitatibus doloribus praesentium, unde numquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni voluptate dolor ullam libero veritatis? Repellendus voluptatem temporibus accusamus quasi dicta unde magni ducimus minima pariatur dolor officiis, expedita non rem!
     </div>
-    
+
     <Link to="/portal">
-         <button type="button" class="text-white ml-5 mt-5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</button>
+         <button type="button" class="text-white ml-5 mt-5 mb-60 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</button>
     </Link>
     </>
   )
