@@ -4,7 +4,7 @@ import Typed from "typed.js";
 const TypingText = () => {
     useEffect(() => {
         const typed = new Typed(".typing-text", {
-            strings: ["Mitr", "मित्र", "বন্ধু", "મિત્રો" ],
+            strings: ["Mitr.", "मित्र.", "বন্ধু.", "મિત્રો." ],
             loop: true,
             typeSpeed: 70,
             showCursor: false, 

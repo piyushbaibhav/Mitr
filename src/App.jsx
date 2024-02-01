@@ -22,7 +22,7 @@ function App() {
     <Router>
       
       {/* <DarkModeToggle/> */}
-      <Hamburger/>
+      {/* <Hamburger/> */}
       {/* <DarkModeToggle/>
       <TypingText/> */}
       <Routes>
