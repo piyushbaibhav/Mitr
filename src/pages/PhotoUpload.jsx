@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function PhotoUpload() {
   return (
     <>
-    <nav className='m-5'>
+    <nav className=''>
         <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base">
           <li class="flex md:w-full items-center text-blue-600 dark:text-blue-500 sm:after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-200 after:border-1 after:hidden sm:after:inline-block after:mx-6 xl:after:mx-10 dark:after:border-gray-700">
             <span class="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200 dark:after:text-gray-500">
@@ -38,8 +38,8 @@ export default function PhotoUpload() {
           </li>
         </ol>
     </nav>
-    <div className='ml-5 mb-6 text-2xl font-bold'>PhotoUpload</div>
-    <div className=' ml-5'><p>Please upload your photo in white background below : </p></div>
+    <div className='m-5 text-2xl font-bold'>PhotoUpload</div>
+    <div className=' ml-5 '><p>Please upload your photo in white background below : </p></div>
     
     <Gallery />
     <Link to="/term">
