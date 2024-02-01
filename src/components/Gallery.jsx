@@ -10,7 +10,7 @@ const Gallery = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleFileUpload = (files) => {
-    const imageFiles = files.filter(file => file.type.startsWith('image/'));
+    const imageFiles = files.filter(file => file.type.startsWith('image/', 'image/webp'));
     
     if (imageFiles.length === 0) {
       setErrorMessage('Please select valid image files.');

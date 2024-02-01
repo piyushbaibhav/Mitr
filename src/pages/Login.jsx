@@ -195,7 +195,7 @@ const Login = () => {
           <input type="password" name="password" placeholder="Password" />
           <a href="">Forgot your email or password?</a>
           <Link to="/dashboard">
-          <button onClick={(e)=>{handleLogin(e)}} >Sign in</button>
+          <button >Sign in</button>
           </Link>
 
           {
