@@ -16,6 +16,7 @@ import ITasset from './pages/ITasset';
 import Feedback from './pages/Feedback';
 import Settings from './pages/Settings';
 import About from './pages/About';
+import AdminLogin from './components/AdminLogin';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path='/feedback' element={<Feedback/>}/>
         <Route path='/settings' element={<Settings/>}/>
         <Route path='/portal' element={<Portal/>}/>
+        <Route path='/admin' element={<AdminLogin/>}/>
       </Routes>
         <Footer/>
       </Router>
