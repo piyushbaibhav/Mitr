@@ -16,7 +16,6 @@ function App() {
     <>
     <Router>
       {/* <DarkModeToggle/> */}
-      <TypingText/>
       <Hamburger/>
       {/* <DarkModeToggle/>
       <TypingText/> */}
