@@ -11,6 +11,7 @@ import DocumentVerify from './pages/DocumentVerify';
 import PhotoUpload from './pages/PhotoUpload';
 import Terms from './pages/Terms';
 import Portal from './pages/Portal';
+import Chatbot from './components/Chatbot';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
   return (
     <>
     <Router>
-      
+      <Chatbot/>
       {/* <DarkModeToggle/> */}
       {/* <Hamburger/> */}
       {/* <DarkModeToggle/>
