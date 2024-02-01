@@ -11,6 +11,7 @@ import DocumentVerify from './pages/DocumentVerify';
 import PhotoUpload from './pages/PhotoUpload';
 import Terms from './pages/Terms';
 import Portal from './pages/Portal';
+import ProtectedRoute from './components/ProtectedRoute';
 
 
 function App() {

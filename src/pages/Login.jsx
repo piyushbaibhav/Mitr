@@ -155,7 +155,7 @@ const Login = () => {
           <h1>Sign In</h1>
           
           <div className="social-icons">
-            <a href="#" class="icon">
+            <a onClick={handleGoogleSignIn} href="#" class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 488 512"
