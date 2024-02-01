@@ -18,6 +18,8 @@ function App() {
       {/* <DarkModeToggle/> */}
       <TypingText/>
       <Hamburger/>
+      {/* <DarkModeToggle/>
+      <TypingText/> */}
       <Routes>
         <Route path='/' element={<Login/>}/>
         <Route path='/dashboard' element={<Dashboard/>}/>
