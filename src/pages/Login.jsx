@@ -89,6 +89,7 @@ const Login = () => {
   };
 
   return (
+    <div className="mx-[22%]">
     <div className={`cont ${isActive ? 'active' : ''}`}>
       <div className={`form-cont sign-up ${isActive ? 'move' : ''}`}>
 
@@ -228,6 +229,7 @@ const Login = () => {
 
       
     </div>
+  </div>
   );
 };
 

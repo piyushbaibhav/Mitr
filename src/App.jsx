@@ -12,6 +12,11 @@ import PhotoUpload from './pages/PhotoUpload';
 import Terms from './pages/Terms';
 import Portal from './pages/Portal';
 import ProtectedRoute from './components/ProtectedRoute';
+import Chatbot from './components/Chatbot';
+import ITasset from './pages/ITasset';
+import Feedback from './pages/Feedback';
+import Settings from './pages/Settings';
+import About from './pages/About';
 
 
 function App() {
@@ -20,7 +25,7 @@ function App() {
   return (
     <>
     <Router>
-      
+      <Chatbot/>
       {/* <DarkModeToggle/> */}
       {/* <Hamburger/> */}
       {/* <DarkModeToggle/>
@@ -31,6 +36,10 @@ function App() {
         <Route path='/documentverify' element={<DocumentVerify/>}/>
         <Route path='/photoupload' element={<PhotoUpload/>}/>
         <Route path='/term' element={<Terms/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/it' element={<ITasset/>}/>
+        <Route path='/feedback' element={<Feedback/>}/>
+        <Route path='/settings' element={<Settings/>}/>
         <Route path='/portal' element={<Portal/>}/>
       </Routes>
         <Footer/>

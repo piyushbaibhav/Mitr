@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Hamburger from '../components/Hamburger';
 
 export default function Dashboard() {
   const [isTermsChecked, setIsTermsChecked] = useState(false);
