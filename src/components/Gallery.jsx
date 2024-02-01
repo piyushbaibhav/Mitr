@@ -63,7 +63,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="container mx-auto p-4  rounded-md w-1/2">
+    <div className="container p-4  rounded-md w-1/2">
       
 
       <FileUpload onFileUpload={handleFileUpload} className="w-full mb-4" />
