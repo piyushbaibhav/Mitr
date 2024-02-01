@@ -18,7 +18,7 @@ export default function Dashboard() {
 
   return (
     <>
-    <div className=''>
+    <div className='m-10'>
       
       <nav className='m-5'>
           <ol class="flex items-center w-full text-sm font-medium text-center text-gray-500 dark:text-gray-400 sm:text-base">
@@ -51,12 +51,12 @@ export default function Dashboard() {
       </nav>
       <div className='m-5'>
         <p className='text-2xl font-bold'>Contract</p>
-        <div className='w-4/5 '>
+        <div className='mt-5 w-4/5 '>
           <p>I hereby acknowledge and confirm the acceptance of the terms and conditions outlined in the mentioned contract.<br/>
 
                 By signing below, I affirm that I have thoroughly reviewed the contract and agree to comply with all the specified terms, obligations, and responsibilities outlined therein.
           </p>
-          <div className="flex items-center">
+          <div className="mt-2 flex items-center">
             <input
               id="terms-checkbox"
               type="checkbox"
@@ -76,10 +76,10 @@ export default function Dashboard() {
               .
             </label>
           </div>
-          <p>
+          <p className='mt-5'>
             The obligations of the Receiving Party under this Agreement shall continue for a period of [specify the duration] from the date of disclosure of each portion of Confidential Information.
           </p>
-          <div className="flex items-center">
+          <div className="flex mt-2 items-center">
             <input
               id="nda-checkbox"
               type="checkbox"
