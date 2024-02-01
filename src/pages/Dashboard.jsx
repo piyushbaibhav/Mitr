@@ -41,14 +41,14 @@ export default function Dashboard() {
               </li>
               <li class="flex items-center">
                   <span class="me-2">4.</span>
-                  Terms <span class="hidden sm:inline-flex sm:ms-2"> & </span> <span class="hidden sm:inline-flex sm:ms-2"> Conditions</span>
+                  Job <span class="hidden sm:inline-flex sm:ms-2"> Responsibilites</span>
                 
               </li>
             </ol>
           </nav>
         </div>
     <div className="flex justify-center items-center m-14">
-      <div className="bg-white shadow-2xl rounded-2xl p-10">
+      <div className="bg-white shadow-2xl rounded-2xl p-5">
         
         <div className='m-5'>
           <p className='text-2xl font-bold'>Agreement & Contract</p>
@@ -71,7 +71,7 @@ export default function Dashboard() {
               >
                 I agree with the{' '}
                 <a href="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3543196/AmazonContract.0.pdf" target="_blank" className="text-blue-600 dark:text-blue-500 hover:underline">
-                  terms and conditions
+                  Terms and Conditions
                 </a>
                 .
               </label>
@@ -81,7 +81,7 @@ export default function Dashboard() {
             </p><p>
             I understand that my employment with Amazon is at-will, and either party may terminate the employment relationship at any time, with or without cause or notice.
             </p>
-            <div className="flex mt-2 items-center">
+            <div className="flex mt-2 mb-6 items-center">
               <input
                 id="nda-checkbox"
                 type="checkbox"
@@ -96,7 +96,7 @@ export default function Dashboard() {
               >
                 I agree with the{' '}
                 <a href="https://s3.us-east-2.amazonaws.com/myhrcounsel2/On-boarding/Forms/Employee+Confidentiality+and+Non-Disclosure+Agreement.pdf" target="_blank" className="text-blue-600 dark:text-blue-500 hover:underline">
-                  NDA contract
+                  NDA Contract
                 </a>
                 .
               </label>
@@ -108,7 +108,7 @@ export default function Dashboard() {
               className="text-white mt-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               disabled={isProceedButtonDisabled}
             >
-              Proceed
+              Proceed→  
             </button>
           </Link>
         </div>
