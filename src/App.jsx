@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='text-3xl font-bold underline'>Mitr</div>
+      <div className='text-3xl font-bold underline'>Mitr.</div>
     </>
   )
 }
