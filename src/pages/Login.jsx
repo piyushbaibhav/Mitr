@@ -14,8 +14,8 @@ const Login = () => {
   };
 
   return (
-    <div className={`container ${isActive ? 'active' : ''}`}>
-      <div className={`form-container sign-up ${isActive ? 'move' : ''}`}>
+    <div className={`cont ${isActive ? 'active' : ''}`}>
+      <div className={`form-cont sign-up ${isActive ? 'move' : ''}`}>
 
         <form>
           <h1>Create Account</h1>
@@ -63,7 +63,7 @@ const Login = () => {
           </Link>
         </form>
       </div>
-      <div className={`form-container sign-in ${isActive ? '' : 'move'}`}>
+      <div className={`form-cont sign-in ${isActive ? '' : 'move'}`}>
 
         <form>
           <h1>Sign In</h1>
@@ -112,7 +112,7 @@ const Login = () => {
 
         </form>
       </div>
-      <div className={`toggle-container ${isActive ? 'move' : ''}`}>
+      <div className={`toggle-cont ${isActive ? 'move' : ''}`}>
         <div className="toggle">
           <div className="toggle-panel toggle-left">
             <h1>Welcome Back!</h1>

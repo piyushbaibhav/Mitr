@@ -1,23 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
 
 body{
     background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: column; */
+    /* height: 100vh; */
 }
 
-.container{
+.cont{
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -28,25 +28,25 @@ body{
     min-height: 480px;
 }
 
-.container p{
+.cont p{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.container span{
+.cont span{
     font-size: 12px;
 }
 
-.container a{
+.cont a{
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.container button{
+.cont button{
     background-color: #2ab0e5;
     color: #fff;
     font-size: 12px;
@@ -60,12 +60,12 @@ body{
     cursor: pointer;
 }
 
-.container button.hidden{
+.cont button.hidden{
     background-color: transparent;
     border-color: #fff;
 }
 
-.container form{
+.cont form{
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ body{
     height: 100%;
 }
 
-.container input{
+.cont input{
     background-color: #eee;
     border: none;
     margin: 8px 0;
@@ -86,7 +86,7 @@ body{
     outline: none;
 }
 
-.form-container{
+.form-cont{
     position: absolute;
     top: 0;
     height: 100%;
@@ -99,7 +99,7 @@ body{
     z-index: 2;
 }
 
-.container.active .sign-in{
+.cont.active .sign-in{
     transform: translateX(100%);
 }
 
@@ -110,7 +110,7 @@ body{
     z-index: 1;
 }
 
-.container.active .sign-up{
+.cont.active .sign-up{
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
@@ -143,7 +143,7 @@ body{
     height: 40px;
 }
 
-.toggle-container{
+.toggle-cont{
     position: absolute;
     top: 0;
     left: 50%;
@@ -155,7 +155,7 @@ body{
     z-index: 1000;
 }
 
-.container.active .toggle-container{
+.cont.active .toggle-cont{
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
@@ -173,7 +173,7 @@ body{
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle{
+.cont.active .toggle{
     transform: translateX(50%);
 }
 
@@ -196,7 +196,7 @@ body{
     transform: translateX(-200%);
 }
 
-.container.active .toggle-left{
+.cont.active .toggle-left{
     transform: translateX(0);
 }
 
@@ -205,7 +205,7 @@ body{
     transform: translateX(0);
 }
 
-.container.active .toggle-right{
+.cont.active .toggle-right{
     transform: translateX(200%);
 }
 
@@ -213,7 +213,7 @@ body{
 
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-    .container {
+    .cont {
         background-color: #fff;
         border-radius: 30px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -231,7 +231,7 @@ body{
         width: 30px;
         height: 30px;
     }
-    .toggle-container{
+    .toggle-cont{
         position: absolute;
         top: 0;
         left: 50%;
@@ -251,10 +251,10 @@ body{
     a {
         font-size: 5px;
     }
-    .container form {
+    .cont form {
         font-size: 15px;
     }
-    .container input {
+    .cont input {
         border: none;
         margin: 8px 0;
         padding: 10px 15px;
@@ -263,7 +263,7 @@ body{
         width: 120%;
         outline: none;
     }
-    .container button{
+    .cont button{
         background-color: #117af1;
         color: #fff;
         font-size: 11px;
@@ -287,4 +287,4 @@ body{
         opacity: 0;
         z-index: 1;
     }
-} */
+} 
