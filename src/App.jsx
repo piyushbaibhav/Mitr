@@ -34,10 +34,10 @@ function App() {
         <Route path='/documentverify' element={<DocumentVerify/>}/>
         <Route path='/photoupload' element={<PhotoUpload/>}/>
         <Route path='/term' element={<Terms/>}/>
-        <Route path='/About' element={<About/>}/>
-        <Route path='/IT' element={<ITasset/>}/>
-        <Route path='/Feedback' element={<Feedback/>}/>
-        <Route path='/Settings' element={<Settings/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/it' element={<ITasset/>}/>
+        <Route path='/feedback' element={<Feedback/>}/>
+        <Route path='/settings' element={<Settings/>}/>
         <Route path='/portal' element={<Portal/>}/>
       </Routes>
         <Footer/>

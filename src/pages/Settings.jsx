@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Hamburger from '../components/Hamburger'
 
 export default function Settings() {
     return (
-        <div className="">Settings</div>
+    <>  
+    <Hamburger/><div className="">Settings</div>
+    </>   
     )
 }
