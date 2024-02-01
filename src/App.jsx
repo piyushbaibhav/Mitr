@@ -13,8 +13,8 @@ function App() {
   return (
     <>
     <Router>
-      <DarkModeToggle/>
-      <TypingText/>
+      {/* <DarkModeToggle/>
+      <TypingText/> */}
       <Routes>
       <Route path='/' element={<Login/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
