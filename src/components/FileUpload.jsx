@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
+import StoreImageText from '../firebase/StoreImageText';
 
 const FileUpload = ({ onFileUpload }) => {
   const onDrop = useCallback(
@@ -18,6 +19,7 @@ const FileUpload = ({ onFileUpload }) => {
     >
       <input {...getInputProps()} />
       {isDragActive ? <p>Drop the files here ...</p> : <p>Drag 'n' drop some files here, or click to select files</p>}
+    <StoreImageText/>
     </div>
   );
 };
