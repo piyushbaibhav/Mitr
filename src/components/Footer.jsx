@@ -15,7 +15,7 @@ export default function Footer() {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 hover:underline font-medium text-sm text-gray-900 uppercase dark:text-white"><span><Link to='/admin'>Admin </Link></span></h2>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white hover:underline"><span><Link to='/admin'>Admin </Link></span></h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                           <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline"><Link to='/about'>About Us </Link></a>
