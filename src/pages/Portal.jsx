@@ -6,7 +6,7 @@ export default function Portal() {
     <>
     <div className='flex'>
       <Hamburger/>
-            <main className="w-full">
+            <main className="w-full mt-5">
                 <div class="grid mb-4 pb-10 px-8 mx-4 rounded-3xl bg-gray-100 border-4 border-green-400">
 
                     <div class="grid grid-cols-12 gap-6">

@@ -9,7 +9,7 @@ export default function Footer() {
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-              <a href="https://github.com/piyushbaibhav/Mitr" class="flex items-center">
+              <a href="https://github.com/piyushbaibhav/Mitr" target="_blank" class="flex items-center">
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><TypingText/></span>
               </a>
           </div>
@@ -18,7 +18,7 @@ export default function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white hover:underline"><span><Link to='/admin'>Admin </Link></span></h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline"><Link to='/about'>About Us </Link></a>
+                          <a href=""  class="hover:underline"><Link to='/about'>About Us </Link></a>
                       </li>
                       <li class="mb-4">
                           <a href="http://localhost:5173/career" class="hover:underline"><Link to='/career'>Career </Link></a>
@@ -29,10 +29,10 @@ export default function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline ">Github</a>
+                          <a href="https://github.com/piyushbaibhav/Mitr" target="_blank" class="hover:underline ">Github</a>
                       </li>
                       <li>
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">LinkedIn</a>
+                          <a href="https://github.com/piyushbaibhav/Mitr" target="_blank" class="hover:underline">LinkedIn</a>
                       </li>
                   </ul>
               </div>

@@ -5,7 +5,7 @@ import Hamburger from '../components/Hamburger'
 export default function ITasset() {
     return (
     <>
-    
+    {/* <img src='./back.svg' className='-z-10'/> */}
     <div className='flex'>
     <Hamburger/> <div className='mx-auto mt-24 h-1/2 border bg-blue-100 shadow-2xl rounded-2xl p-5'><span className='ml-24 font-extrabold'>Hardware Request Form</span>
         <div class="w-full mt-4 bg-blue md:w-96 md:max-w-full mx-auto">
