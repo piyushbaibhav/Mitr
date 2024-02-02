@@ -26,7 +26,7 @@ function App() {
   return (
     <>
     <Router>
-      <Chatbot/>
+      
       {/* <DarkModeToggle/> */}
       {/* <Hamburger/> */}
       {/* <DarkModeToggle/>
