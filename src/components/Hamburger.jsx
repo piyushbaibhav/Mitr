@@ -11,7 +11,7 @@ export default function Hamburger() {
     return (
         <>
 
-    <div class="w-3/12 h-screen bg-white rounded p-3 shadow-lg">
+    <div class="w-3/12 h-auto mb-5 bg-white rounded p-3 shadow-lg">
         <div class="flex items-center space-x-4 p-2 mb-5">
             <img class="h-12 rounded-full" src="./Logo.svg" alt="James Bhatta"/>
         </div>
