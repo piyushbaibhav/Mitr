@@ -8,8 +8,8 @@ export default function About() {
     <div className="flex">
         <Hamburger/>
     <div className="flex m-5">
-      <div className="bg-white shadow-2xl rounded-2xl ">
-        <section class="bg-white dark:bg-gray-900">
+      <div className="bg-blue-100 shadow-2xl rounded-2xl ">
+        <section class="bg-blue-100 rounded-2xl dark:bg-gray-900">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg: lg:px-6 ">
       <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
