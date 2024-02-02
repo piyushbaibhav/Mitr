@@ -10,16 +10,18 @@ export default function Footer() {
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="https://github.com/piyushbaibhav/Mitr" class="flex items-center">
-                  {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" /> */}
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><TypingText/></span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 hover:underline font-medium text-sm text-gray-900 uppercase dark:text-white"><Link to='/admin'>Admin </Link></h2>
+                  <h2 class="mb-6 hover:underline font-medium text-sm text-gray-900 uppercase dark:text-white"><span><Link to='/admin'>Admin </Link></span></h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline"><Link to='/admin'>About Us </Link></a>
+                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline"><Link to='/about'>About Us </Link></a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="http://localhost:5173/career" class="hover:underline"><Link to='/career'>Career </Link></a>
                       </li>
                   </ul>
               </div>

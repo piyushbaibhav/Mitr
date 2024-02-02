@@ -18,7 +18,7 @@ import Feedback from './pages/Feedback';
 import Settings from './pages/Settings';
 import About from './pages/About';
 import AdminLogin from './components/AdminLogin';
-
+import Career from './pages/Career';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,6 +43,7 @@ function App() {
         <Route path='/settings' element={<Settings/>}/>
         <Route path='/portal' element={<Portal/>}/>
         <Route path='/admin' element={<AdminLogin/>}/>
+        <Route path='/career' element={<Career/>}/>
       </Routes>
       <Chatbot/>
         <Footer/>
