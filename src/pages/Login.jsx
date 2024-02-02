@@ -2,13 +2,17 @@ import './Login.css';
 
 
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { auth } from '../firebase/config';
 import { 
           createUserWithEmailAndPassword, 
           signInWithEmailAndPassword,
           GoogleAuthProvider,
           signInWithPopup,
+          GithubAuthProvider,
+          FacebookAuthProvider
           
        } from "firebase/auth";
 
@@ -17,12 +21,68 @@ const Login = () => {
   const [isActive, setIsActive] = useState(false);
   const [userCredentials, setUserCredentials]=useState({});
   const [error, setError]=useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   const provider = new GoogleAuthProvider();
+
+  const provider2 = new GithubAuthProvider();
+
+  const provider3 = new FacebookAuthProvider();
 
   function handleCredentials(e){
     setUserCredentials({...userCredentials,[e.target.name]: e.target.value});
     
+  }
+
+  function handleGithubSignIn(){
+    signInWithPopup(auth, provider2)
+  .then((result) => {
+    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
+    const credential = GithubAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GithubAuthProvider.credentialFromError(error);
+    // ...
+  });
+  }
+
+  function handleFacebookSignIn(){
+    signInWithPopup(auth, provider3)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+
+    // ...
+  });
+
   }
 
   function handleGoogleSignIn() {
@@ -33,6 +93,8 @@ const Login = () => {
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
+    navigate('/dashboard');
+    setLoggedIn(true);
     // IdP data available using getAdditionalUserInfo(result)
     // ...
   }).catch((error) => {
@@ -87,6 +149,9 @@ const Login = () => {
   const handleLoginClick = () => {
     setIsActive(false);
   };
+//   if (loggedIn) {
+//     return navigate('/dashboard'); // Redirect if logged in
+// }
 
   return (
     <div className="mx-[22%]">
@@ -106,7 +171,7 @@ const Login = () => {
                 <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
               </svg>
             </a>
-            <a href="#" class="icon">
+            <a onClick={handleFacebookSignIn} href="#" class="icon">
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
                 className='w-1/2 h-1/2 '>
@@ -121,7 +186,7 @@ const Login = () => {
                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                 </svg>
             </a>
-            <a href="#" class="icon">
+            <a onClick={handleGithubSignIn} href="#" class="icon">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
@@ -165,7 +230,7 @@ const Login = () => {
                 <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
               </svg>
             </a>
-            <a href="#" class="icon">
+            <a onClick={handleFacebookSignIn} href="#" class="icon">
               <svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
                 className='w-1/2 h-1/2 '>
@@ -180,7 +245,7 @@ const Login = () => {
                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                 </svg>
             </a>
-            <a href="#" class="icon">
+            <a onClick={handleGithubSignIn} href="#" class="icon">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 496 512"
