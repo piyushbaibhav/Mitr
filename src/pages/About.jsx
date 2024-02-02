@@ -176,8 +176,8 @@ export default function About() {
         </ul>
   </div>
 </section></div></div>        
-    </div>
+    </div>        
     </>        
-        
+
     )
 }
