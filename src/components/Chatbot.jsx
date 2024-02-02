@@ -13,13 +13,13 @@ const Chatbot = () => {
     const handleSendMessage = () => {
         if (inputText.trim() === '') return;
 
-        // Add user message
+        
         setMessages((prevMessages) => [
             ...prevMessages,
             { text: inputText, type: 'user' },
         ]);
 
-        // Simulate bot response (you can replace this with actual logic)
+        
         setTimeout(() => {
             setMessages((prevMessages) => [
                 ...prevMessages,
@@ -37,7 +37,7 @@ const Chatbot = () => {
             ]);
         }, 500);
 
-        // Clear input
+        
         setInputText('');
     };
 
