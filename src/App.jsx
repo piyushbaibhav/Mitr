@@ -39,7 +39,7 @@ function App() {
         <Route path='/term' element={<Terms/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/it' element={<ITasset/>}/>
-        <Route path='/feedback' element={<Feedback/>}/>
+        <Route path='/faqs' element={<Feedback/>}/>
         <Route path='/settings' element={<Settings/>}/>
         <Route path='/portal' element={<Portal/>}/>
         <Route path='/admin' element={<AdminLogin/>}/>
