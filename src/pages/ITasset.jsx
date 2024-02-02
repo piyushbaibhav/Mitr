@@ -5,14 +5,13 @@ import Hamburger from '../components/Hamburger'
 export default function ITasset() {
     return (
     <>
-    <div>
+    <div className='flex'>
     <Hamburger/>
-    <div>
-        <div class="w-full md:w-96 md:max-w-full mx-auto">
-            <div class="p-6 border border-gray-300 sm:rounded-md">
+        <div class="mt-10 ml-72">
+            <div class="bg-blue-100 shadow-2xl rounded-2xl p-6">
                 <form
                 method="POST"
-                action="https://herotofu.com/start"
+                action="Confirmed"
                 enctype="multipart/form-data"
                 >
                 <label class="block mb-6">
@@ -78,7 +77,7 @@ export default function ITasset() {
                             "
                             
                         />
-                        <span class="ml-2">You'd like to work remotely</span>
+                        <span class="ml-2">Laptop</span>
                         </label>
                     </div>
                     <div>
@@ -99,7 +98,7 @@ export default function ITasset() {
                             focus:ring-opacity-50
                             "
                         />
-                        <span class="ml-2">You'd prefer to work onsite</span>
+                        <span class="ml-2">KeyBoard</span>
                         </label>
                     </div>
                     <div>
@@ -120,7 +119,7 @@ export default function ITasset() {
                             focus:ring-opacity-50
                             "
                         />
-                        <span class="ml-2">You'd prefer to work onsite</span>
+                        <span class="ml-2">Mouse</span>
                         </label>
                     </div>
                     <div>
@@ -141,7 +140,7 @@ export default function ITasset() {
                             focus:ring-opacity-50
                             "
                         />
-                        <span class="ml-2">You'd prefer to work onsite</span>
+                        <span class="ml-2">Display Adapters</span>
                         </label>
                     </div>
                     </div>
@@ -168,7 +167,7 @@ export default function ITasset() {
             </div>
             </div>
 
-    </div>
+
     </div>    
     </>
     )
