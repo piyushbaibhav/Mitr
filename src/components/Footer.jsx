@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import TypingText from './Type'
 export default function Footer() {
   return (
@@ -20,8 +21,12 @@ export default function Footer() {
                       <li class="mb-4">
                           <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Mitr.</a>
                       </li>
-                      <li>
+                      <li class="mb-4">
                           <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Details</a>
+                      </li>
+                      <li ><Link to='/admin'>
+                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Admin</a>
+                          </Link>
                       </li>
                   </ul>
               </div>
