@@ -154,7 +154,7 @@ export default function About() {
           </div>  
       </div>
       <p className='text-xl'><strong>About Us</strong></p>
-      <p className='leading-relaxed w-auto pr-12 mb-5 text-justify text-gray-500'>Welcome to [Tech Company Name], where innovation meets excellence. As a pioneering force in the realm of technology, we are committed to redefining possibilities and shaping the future of industries worldwide. Since our inception, we have remained steadfast in our dedication to delivering cutting-edge solutions that empower businesses, individuals, and communities.</p>
+      <p className='leading-relaxed w-auto pr-12 mb-5 text-justify text-gray-500'>Welcome to Mitr, where innovation meets excellence. As a pioneering force in the realm of technology, we are committed to redefining possibilities and shaping the future of industries worldwide. Since our inception, we have remained steadfast in our dedication to delivering cutting-edge solutions that empower businesses, individuals, and communities.</p>
       <p className='leading-relaxed text-xl'><strong>Company Values and Morals</strong></p>
         <ul class=" w-auto space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
             <li>
