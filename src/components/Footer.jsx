@@ -16,17 +16,10 @@ export default function Footer() {
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About Us</h2>
+                  <h2 class="mb-6 hover:underline font-medium text-sm text-gray-900 uppercase dark:text-white"><Link to='/admin'>Admin </Link></h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Mitr.</a>
-                      </li>
-                      <li class="mb-4">
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Details</a>
-                      </li>
-                      <li ><Link to='/admin'>
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Admin</a>
-                          </Link>
+                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline"><Link to='/admin'>About Us </Link></a>
                       </li>
                   </ul>
               </div>
@@ -37,7 +30,7 @@ export default function Footer() {
                           <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline ">Github</a>
                       </li>
                       <li>
-                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">Discord</a>
+                          <a href="https://github.com/piyushbaibhav/Mitr" class="hover:underline">LinkedIn</a>
                       </li>
                   </ul>
               </div>
@@ -45,10 +38,10 @@ export default function Footer() {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="#" class="hover:underline">Privacy Policy</a>
+                          <a href="https://aws.amazon.com/privacy/" target="_blank" class="hover:underline">Privacy Policy</a>
                       </li>
                       <li>
-                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                          <a href="https://cdn1.vox-cdn.com/uploads/chorus_asset/file/3543196/AmazonContract.0.pdf" target="_blank" class="hover:underline">Terms &amp; Conditions</a>
                       </li>
                   </ul>
               </div>

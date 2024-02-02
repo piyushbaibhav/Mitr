@@ -44,6 +44,7 @@ function App() {
         <Route path='/portal' element={<Portal/>}/>
         <Route path='/admin' element={<AdminLogin/>}/>
       </Routes>
+      <Chatbot/>
         <Footer/>
       </Router>
       
