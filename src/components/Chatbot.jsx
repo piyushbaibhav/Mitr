@@ -24,18 +24,15 @@ const Chatbot = () => {
             setMessages((prevMessages) => [
                 ...prevMessages,
                 {
-                    text: 'Hi! How can I help you? Here are the most common FAQs',
+                    text: (
+                        <span>
+                            Hi! How can I help you? Here are the most common{' '}
+                            <Link to="/faqs">
+                                <p className='underline font-semibold'>FAQs.</p>
+                            </Link>
+                        </span>
+                    ),
                     type: 'bot'
-                },
-                {
-                    text: 'FAQ 1 text goes here. [General]',
-                    type: 'faq',
-                    url: '/faq1'
-                },
-                {
-                    text: 'FAQ 2 text goes here. [Technical]',
-                    type: 'faq',
-                    url: '/faq2'
                 },
             ]);
         }, 500);
@@ -73,7 +70,7 @@ const Chatbot = () => {
                 <div className="bg-white border rounded shadow p-4 mt-2 max-w-xs">
                     <div style={{ height: '200px', border: '1px solid #ccc', overflowY: 'auto' }}>
                         {messages.map((message, index) => (
-                            <div key={index} className={message.type === 'user' ? 'text-red-500 grid justify-items-end' : 'text-blue-400 '}>
+                            <div key={index} className={message.type === 'user' ? 'text-md text-sky-800 grid justify-items-end' : 'text-md text-blue-400 '}>
                                 {message.text}
                             </div>
                         ))}
