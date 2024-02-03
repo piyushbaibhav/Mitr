@@ -112,9 +112,21 @@ Its generalised and scalability allows it to be easily implemented in your porta
 
 ![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Admin.png)
 
+### Sign In Update
+
+![alt text](public/ReadmeImgs/Auth.jpg)
+
+### Image Upload
+
+![alt text](public/ReadmeImgs/Storage.jpg)
+
+### Form Update
+
+![alt text](public/ReadmeImgs/Form.jpg)
+
 ## Video
 
-![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Video.mp4)
+<video controls src="public/ReadmeImgs/Video.mp4" title="Video"></video>
 
 ## Setup Instructions
 
