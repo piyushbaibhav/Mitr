@@ -53,6 +53,7 @@ Its generalised and scalability allows it to be easily implemented in your porta
   - Platform for collecting feedback for continuous improvement.
 
 - Company Social Links
+
   - Direct links to the company's social handles and website.
 
 ## Technologies Used
@@ -65,51 +66,55 @@ Its generalised and scalability allows it to be easily implemented in your porta
 
 ### Login Page
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Login.png)
 
 ### Contract Acceptance
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Contract.png)
 
 ### Document Verification
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Document.png)
 
 ### Photo Upload
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Photo.png)
 
 ### Job & Responsibilities
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Job.png)
 
 ### Dashboard
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Dashboard.png)
 
 ### About the Company
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/About.png)
 
-### IT Asset 
+### IT Asset
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/ITAsset.png)
 
 ### Feedback
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/FAQ.png)
 
-### Settings 
+### Settings
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Settings.png)
 
 ### Career Timeline
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Career.png)
 
 ### Admin Login
 
-![]()
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Admin.png)
+
+## Video
+
+![](https://github.com/piyushbaibhav/Mitr/blob/main/public/ReadmeImgs/Video.mp4)
 
 ## Setup Instructions
 
@@ -121,6 +126,7 @@ Before you proceed with the setup, ensure that you have the following prerequisi
 - [React](https://react.dev/learn/installation)
 - [Tailwind](https://tailwindcss.com/docs/installation)
 - [Firebase](https://firebase.google.com/)
+- [Git](https://git-scm.com/downloads)
 
 ### Clone MItr Repository
 
@@ -131,6 +137,7 @@ Before you proceed with the setup, ensure that you have the following prerequisi
    ```bash
    git clone https://github.com/piyushbaibhav/Mitr.git
    ```
+
 ### Install the required dependencies:
 
 `npm i`
