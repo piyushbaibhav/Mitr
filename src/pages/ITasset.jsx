@@ -1,7 +1,7 @@
 import React from 'react';
 import Hamburger from '../components/Hamburger';
 import { getFirestore, doc, setDoc, Timestamp } from "firebase/firestore";
-import { app } from '../firebase/config'; // Assuming you have a firebaseConfig.js file where Firebase is initialized
+import { app } from '../firebase/config'; 
 
 const db = getFirestore(app);
 
@@ -21,13 +21,13 @@ export default function ITasset() {
         };
 
         try {
-            // Save form data to Firestore
+            
             await setDoc(doc(db, "requests", "newRequest"), {
                 ...formData,
                 timestamp: Timestamp.fromDate(new Date())
             });
 
-            // Optionally, you can clear the form fields or show a success message
+            
             console.log('Form data submitted successfully:', formData);
         } catch (error) {
             console.error('Error submitting form data:', error);
